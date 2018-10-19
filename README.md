@@ -10,12 +10,13 @@
 ---
 * 讀取csv檔方法
 ```
+import csv
 with open(self.fileName, 'r', newline='', encoding='utf-8') as csvfile:
-            rows = csv.DictReader(csvfile)
-            for row in rows:
-                #章節名稱
-                print(row['name'])
-                #章節內容
-                print(row['content'])
+    rows = csv.DictReader(csvfile)
+    for row in rows:
+        #章節名稱
+        print(row['name'])
+        #章節內容
+        print(row['content'])
 ```
 
