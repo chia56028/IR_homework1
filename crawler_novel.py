@@ -65,7 +65,7 @@ class crawler_novel:
                 print(row['content'])
 
                 
-    
+#test code          
 crawler_novel = crawler_novel()
-#crawler_novel.download()
+crawler_novel.download()
 crawler_novel.readCSV()
