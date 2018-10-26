@@ -8,6 +8,25 @@
 * Hierichal Tree 繪圖參考：https://colab.research.google.com/drive/1VXStWmXomJ47e2zmywconho21neVUI62
 
 ---
+#### 主要程式
+* crawler_novel.py
+    * 從網頁上抓取小說內容，並寫入csv檔
+* tokenize_to_json.py
+    * 讀取novel.csv, userdict.txt, dict.txt.big，斷詞並刪除無用詞彙(ex.的、了、標點符號)，並輸出json檔(doc_term_list.json)
+* cluster_input.py
+    * 處理小說和斷詞，整理成cluster程式的input檔案(data_tf & data_tfidf)
+* draw_cluster.py
+    * 讀取data_tf & data_idf，繪製成圖(cluster_tf & cluster_idf)
+
+#### 其他檔案
+* test_tokenize.ipynb
+    * jieba使用方式
+* count_weight.ipynb
+    * sklearn使用方式
+* similary_of_doc.ipynb
+    * genson使用方式
+
+
 * 讀取csv檔方法
 ```
 import csv
