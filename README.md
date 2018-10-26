@@ -23,8 +23,8 @@
     * jieba使用方式
 * count_weight.ipynb
     * sklearn使用方式
-* similary_of_doc.ipynb
-    * genson使用方式
+* similarity_of_doc.ipynb
+    * gensim使用方式
 
 
 * 讀取csv檔方法
