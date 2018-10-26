@@ -66,9 +66,10 @@ class tokenize_to_json:
 
 
 #test code
-# ttj = tokenize_to_json()
-# ttj.readCSV()
-# ttj.tokenize_novel()
-# ttj.write_json()
-# dtl = ttj.read_json()
+ttj = tokenize_to_json()
+ttj.readCSV()
+ttj.tokenize_novel()
+ttj.write_json()
+dtl = ttj.read_json()
+print(dtl[0])
 

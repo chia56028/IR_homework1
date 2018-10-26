@@ -213,8 +213,13 @@ def drawnode(
         font1 = ImageFont.truetype('ukai.ttc', 24, encoding='UTF-8')
         draw.text((x + 5, y - 7), unicode(labels[clust.id],'UTF-8'), (0, 0, 0), font=font1)
 
-
-chap_names,words,data = readfile('data')
+#tf
+chap_names,words,data = readfile('data_tf')
 cluster_result = hcluster(data)
 printcluster(cluster_result,labels=chap_names)
-drawdendrogram(cluster_result,chap_names,jpeg='cluster.jpg')
+drawdendrogram(cluster_result,chap_names,jpeg='cluster_tf.jpg')
+#tfidf
+chap_names,words,data = readfile('data_tfidf')
+cluster_result = hcluster(data)
+printcluster(cluster_result,labels=chap_names)
+drawdendrogram(cluster_result,chap_names,jpeg='cluster_tfidf.jpg')
